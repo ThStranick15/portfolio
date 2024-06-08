@@ -30,6 +30,9 @@ header{
 main{
     display: flex;
     flex-direction: column;
+    .divider{
+        border: 2px solid #91bbff;
+    }
 }
 
 section{
@@ -39,10 +42,74 @@ section{
 .home{
     display: flex;
     flex-direction: row;
+    img{
+        max-width: 300px;
+    }
     div{
         margin-left: 10px;
     }
 }
+
+.cardHolder{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    .projectCard{
+        position: relative;
+        max-width: fit-content;
+        overflow: hidden;
+        margin: auto;
+        &:hover{
+            img{
+                opacity:0.5;
+            }
+            div{
+                visibility: visible;
+                animation: 1s slide-right forwards;
+                transform: translate(-100%);
+            }
+
+            @keyframes slide-right {
+                to{
+                    transform: translateX(0);
+                }
+            }
+        }
+        img{
+            max-width:500px;
+        }
+        div{
+            visibility: hidden;
+            position: absolute;
+            top: 0px;
+            margin-left: 10px;
+            h1{
+                top:10px;
+                left:10px;
+            }
+            p{
+                word-wrap: break-word;
+                top:50px;
+                left:10px;
+            }
+            a{
+                top:200px;
+                left:10px;
+                text-decoration: none;
+                &:hover{
+                    text-decoration: underline;
+                }
+                &:last-of-type{
+                    margin-left: 10px;
+                    top:200px;
+                    left:50px;
+                }
+            }
+        }
+        
+    }
+}
+
 
 footer{
     display: flex;

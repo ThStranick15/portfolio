@@ -1,6 +1,6 @@
 export default function Home(){
     return(
-        <section class="home">
+        <section className="home">
             <img src="/images/Thomas_Stranick.jpg" alt="Thomas Image" />
             <div>
                 <h1>Hi, welcome to my portfolio!</h1>

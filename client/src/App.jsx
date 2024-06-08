@@ -8,6 +8,7 @@ function App() {
   return (
   <main>
     <Header/>
+    <div className='divider'></div>
     <Navigate/>
     <Footer/>
   </main>
