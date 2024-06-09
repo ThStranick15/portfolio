@@ -1,8 +1,11 @@
 export default function Home(){
     return(
         <section className="home">
-            <img src="/images/Thomas_Stranick.jpg" alt="Thomas Image" />
-            <div>
+            <div className="profile">
+                <img src="/images/Thomas_Stranick.jpg" alt="Thomas Image" />
+                <div className="box"></div>
+            </div>
+            <div className="intro">
                 <h1>Hi, welcome to my portfolio!</h1>
                 <h1>My name is Thomas Stranick and I am a Full-Stack Web Developer.</h1>
                 <h1>I recently completed the Rutgers Full Stack Web Development Bootcamp</h1>

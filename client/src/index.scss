@@ -1,3 +1,8 @@
+$base-color: #538392;
+$secondary-color: #6295A2;
+$tertiary-color: #80B9AD;
+$highlight: #B3E2A7;
+
 html,
 body,
 #root,
@@ -17,13 +22,27 @@ header{
         a{
             margin-left: 10px;
             text-decoration: none;
+            color: black;
             &.active{
                 text-decoration: underline;
-              }
-              &:hover{
+            }
+            &:hover{
                 text-decoration: underline;
-              }
+                color: $base-color;
+            }
         }
+    }
+}
+
+.divider{
+    border-radius: 5px;
+    animation-name: fill;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+
+    @keyframes fill {
+        from{width:0%}
+        to{width:100%}
     }
 }
 
@@ -31,26 +50,74 @@ main{
     display: flex;
     flex-direction: column;
     .divider{
-        border: 2px solid #91bbff;
+        border: 2px solid $secondary-color;
     }
 }
 
-section{
+.navigate{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.navigate-contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     flex-grow: 1;
 }
 
 .home{
     display: flex;
     flex-direction: row;
-    img{
-        max-width: 300px;
+    margin-top: 10px;
+    align-items: center;
+    .profile{
+        position: relative;
+        img{
+            max-width: 300px;
+        }
+        .box{
+            position: absolute;
+            z-index: -1;
+            top: 0px;
+            background-color: $highlight;
+            width: 300px;
+            height: 450px;
+            animation-name: tilt;
+            animation-duration: 4s;
+            animation-fill-mode: forwards;
+            border-radius: 5px;
+
+            @keyframes tilt {
+                from{transform: rotate(0deg);}
+                to{transform: rotate(10deg);}
+            }
+        }
     }
-    div{
-        margin-left: 10px;
+    .intro{
+        margin-left: 50px;
+        z-index: -1;
+        animation: 2s slide-right forwards;
+        transform: translate(-40%);
+
+        @keyframes slide-right {
+            to{
+                transform: translateX(0);
+            }
+        }
     }
 }
 
-.cardHolder{
+.portfolio{
+    h1{
+        background-color: $tertiary-color;
+        padding: 5px;
+        border-radius: 5px;
+    }
+    .cardHolder{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -109,6 +176,72 @@ section{
         
     }
 }
+}
+
+
+.formContainer{
+    max-width: 500px;
+    margin: auto;
+    h1{
+        background-color: $tertiary-color;
+        padding: 5px;
+        border-radius: 5px;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        border: 3px solid $base-color;
+        border-radius: 5px;
+        padding: 10px;
+        input, textarea, button{
+            all: unset;
+            padding: 5px;
+            border-radius: 5px;
+            margin-bottom:10px;
+        }
+        input,textarea{
+            border: 1px solid $base-color;
+        }
+        button{
+            cursor: pointer;
+            background-color: $base-color;
+            &:hover{
+                background-color: $tertiary-color;
+            }
+        }
+    }
+    
+}
+
+.resumeContainer{
+    display: flex;
+    flex-direction: column;
+    max-width: fit-content;
+    margin: auto;
+    align-items: center;
+    h1{
+        background-color: $tertiary-color;
+        padding: 5px;
+        border-radius: 5px;
+    }
+    .capabilities{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .icons *{
+        margin-left: 10px;
+    }
+    a{
+        text-decoration: none;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    embed{
+        margin-top: 10px;
+    }
+}
 
 
 footer{
@@ -118,5 +251,18 @@ footer{
     justify-content: space-between;
     margin-left: 5px;
     margin-right: 5px;
+    .socials{
+        a{
+            text-decoration: none;
+            color: black;
+            &:hover{
+                text-decoration: underline;
+            }
+            &:last-child{
+                margin-left: 10px;
+            }
+        }
+        
+    }
 }
 

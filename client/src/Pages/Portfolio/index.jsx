@@ -47,7 +47,7 @@ const projects =[
 
 export default function Portfolio(){
     return(
-        <section>
+        <section className="portfolio">
             <h1>Portfolio</h1>
             <div className="cardHolder">
                 {projects.map((project,index)=>(
