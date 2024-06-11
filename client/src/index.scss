@@ -99,6 +99,7 @@ main{
     }
     .intro{
         margin-left: 50px;
+        max-width:500px;
         z-index: -1;
         animation: 2s slide-right forwards;
         transform: translate(-40%);
