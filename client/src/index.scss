@@ -150,10 +150,14 @@ main{
             visibility: hidden;
             position: absolute;
             top: 0px;
-            margin-left: 10px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 5px;
+            padding: 5px;
             h1{
                 top:10px;
                 left:10px;
+                margin: 5px;
             }
             p{
                 word-wrap: break-word;
