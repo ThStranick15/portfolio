@@ -2,6 +2,13 @@ import ProjectCard from "./components/Project Card"
 
 const projects =[
     {
+        title:'Robotics Check-In',
+        description:'Single page check-in that records logs of a team member\'s time in, time out, and what was worked on.',
+        img:'/images/Robotics-Sign-In.png',
+        repo:'https://github.com/ThStranick15/robotics_check_in',
+        site:'https://robotics-check-in-3b660a816f91.herokuapp.com/'
+    },
+    {
         title:'Battle Brain',
         description:'Challenge your friends in a contest of brain power!',
         img:'/images/Battle-Brain.png',
