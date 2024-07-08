@@ -7,6 +7,8 @@ html,
 body,
 #root,
 main {
+  margin:0px;
+  padding:0px;
   height: 100%;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
@@ -16,8 +18,8 @@ header{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
     nav{
         a{
             margin-left: 10px;
@@ -39,10 +41,12 @@ header{
     animation-name: fill;
     animation-duration: 4s;
     animation-fill-mode: forwards;
+    margin-left: 5px;
+    margin-right: 5px; 
 
     @keyframes fill {
         from{width:0%}
-        to{width:100%}
+        to{width:99%}
     }
 }
 
@@ -76,8 +80,10 @@ main{
     align-items: center;
     .profile{
         position: relative;
+        z-index: 1;
         img{
             max-width: 300px;
+            
         }
         .box{
             position: absolute;
@@ -100,7 +106,7 @@ main{
     .intro{
         margin-left: 50px;
         max-width:500px;
-        z-index: -1;
+        z-index: 0;
         animation: 2s slide-right forwards;
         transform: translate(-40%);
 
@@ -109,7 +115,22 @@ main{
                 transform: translateX(0);
             }
         }
+
+        a{
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 10px;
+            text-decoration: none;
+            color: white;
+            background-color: $secondary-color;
+            transition: background-color 0.2s;
+            &:hover{
+                background-color: $tertiary-color;
+            }
+        }
     }
+
+    
 }
 
 .portfolio{
@@ -270,8 +291,8 @@ footer{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
     .socials{
         a{
             text-decoration: none;
