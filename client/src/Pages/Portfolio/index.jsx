@@ -2,6 +2,20 @@ import ProjectCard from "./components/Project Card"
 
 const projects =[
     {
+        title:'New Jersey Birds',
+        description:'New Jersey Birding site with a bird dictionary and a practice section.',
+        img:'/images/NJ-Birds.png',
+        repo:'https://github.com/ThStranick15/NE-birds',
+        site:'https://new-jersey-birds-21fc895c196b.herokuapp.com/'
+    },
+    {
+        title:'Robotics Check-In',
+        description:'Single page check-in that records logs of a team member\'s time in, time out, and what was worked on.',
+        img:'/images/Robotics-Sign-In.png',
+        repo:'https://github.com/ThStranick15/robotics_check_in',
+        site:'https://robotics-check-in-3b660a816f91.herokuapp.com/'
+    },
+    {
         title:'Battle Brain',
         description:'Challenge your friends in a contest of brain power!',
         img:'/images/Battle-Brain.png',
