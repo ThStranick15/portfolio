@@ -43,7 +43,7 @@ export default function Home(){
                 </div>}
                 {toggleJapanese && <div className="japaneseIntro">
                     <h1>こんいちは。私のポートフォリオにようこそ！</h1>
-                    <h1>私の名前はトマス・ストラニックです。今私はRutgers Masters of Data Scienseの大学院生です。</h1>
+                    <h1>私の名前はトマス・ストラニックです。今私はRutgers Masters of Data Scienceの大学院生です。</h1>
                     <h1>わたしはRutgers Full Stack Web Development Bootcamp 勉強しました。Lafayette 大学でコンピュータ工学専攻して卒業しました。</h1>
                     <h1>私のウェブサイトを見てくださ, 遠慮なく私には連絡ください。</h1>
                 </div>}
