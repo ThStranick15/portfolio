@@ -61,14 +61,20 @@ const projects =[
 
 export default function Portfolio(){
     return(
+        <>
         <section className="portfolio">
-            <h1>Portfolio</h1>
+            <h1> Data Science Portfolio</h1>
+            <h2>To be added when projects are completed.</h2>
+        </section>
+        <section className="portfolio">
+            <h1> Web Dev Portfolio</h1>
             <div className="cardHolder">
                 {projects.map((project,index)=>(
                     <ProjectCard key={index} project={project}/>
                 ))}
             </div>
         </section>
+        </>
         
     )
 }

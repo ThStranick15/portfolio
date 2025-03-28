@@ -5,12 +5,10 @@
 // $highlight: #B3E2A7;
 
 //Rutgers Colors
-$base-color: #CC0033;
-$secondary-color: #6295A2;
-$tertiary-color: #80B9AD;
-$highlight: #B3E2A7;
-
-
+$base-color: #919191;
+$secondary-color: #970026;
+$tertiary-color: #970026;
+$highlight: #CC0033;
 
 html,
 body,
@@ -147,6 +145,11 @@ main{
         background-color: $tertiary-color;
         padding: 5px;
         border-radius: 5px;
+        color: white;
+    }
+    h2{
+        width: 100%;
+        text-align: center;
     }
     .cardHolder{
     display: grid;
@@ -221,6 +224,7 @@ main{
         background-color: $tertiary-color;
         padding: 5px;
         border-radius: 5px;
+        color: white;
     }
     form{
         display: flex;
@@ -258,20 +262,26 @@ main{
         background-color: $tertiary-color;
         padding: 5px;
         border-radius: 5px;
+        color: white;
+    }
+    .capabilitiesData{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .capabilities{
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .icons{
+    .icons, .dataIcons{
         display: flex;
         justify-content: center;
     }
     .icons-mobile{
         display: none;
     }
-    .icons *{
+    .icons *, .dataIcons *{
         margin-left: 10px;
     }
     i{

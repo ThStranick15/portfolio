@@ -1,9 +1,14 @@
 import Icons from "./components/Icons"
+import DataIcons from "./components/DataIcons"
 export default function Resume(){
     return(
         <section className="resumeContainer">
+            <div className='capabilitiesData'>
+                <h1>Data Science Capabilities</h1>
+                <DataIcons/>
+            </div>
             <div className='capabilities'>
-                <h1>Capabilities</h1>
+                <h1>Web Dev Capabilities</h1>
                 <Icons/>
             </div>
             <h1>Resume</h1>
