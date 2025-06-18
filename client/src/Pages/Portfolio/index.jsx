@@ -64,7 +64,11 @@ export default function Portfolio(){
         <>
         <section className="portfolio">
             <h1> Data Science Portfolio</h1>
-            <h2>To be added when projects are completed.</h2>
+            <div className="cardHolderData">
+                <h2>Parksinson's Detection Using Handwriting Samples - <a href="/FSRM588 Group-5-Final-1.pdf">View Report</a></h2>
+                <h2>Student Growth Mindset Observational Study - <a href="/Stranick_SMC_Poster.pdf">View Report</a></h2>
+                <h2>Movie Trailer Sentiment Analysis - <a href="/Guo_Stranick_Project_Report.pdf">View Report</a></h2>
+            </div>
         </section>
         <section className="portfolio">
             <h1> Web Dev Portfolio</h1>
